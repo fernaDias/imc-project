@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMC PROJECT</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC PROJECT</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <main class="card">
+        <form action="">
+          <h1 class="title">IMC Calculator</h1>
+          <div class="input-wrapper">
+            <label for="weight"> Weight (kg) </label>
+            <input type="text" name="" id="weight" placeholder="60" />
+          </div>
+          <div class="input-wrapper">
+            <label for="height"> Height (m) </label>
+            <input type="text" name="" id="height" placeholder="165" />
+          </div>
 
-</head>
-<body>
- <div class="container">
-  <main class='card'>
+          <button type="submit"> Calculate IMC 
+            
+           <img src="./assets/arrow.svg" alt="arrow to right">
+          </button>
+        </form>
+      </main>
+    </div>
 
-    conteudo alor
-    
-  </main>
- </div>
-</body>
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="cloese">
+            <img src="./assets/close.svg" alt="image to close modal">
+          </button>
+          Seu IMC é de 20
+        </h2>
+      </div>
+    </div>
+  </body>
 </html>
