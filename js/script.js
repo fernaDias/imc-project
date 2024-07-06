@@ -8,6 +8,7 @@ const inputHeight = document.querySelector("#height");
 
 form.onsubmit = (event) => {
   event.preventDefault();
+  
 
   const weight = inputWeight.value;
   const height = inputHeight.value;
@@ -25,9 +26,13 @@ form.onsubmit = (event) => {
   displayResultMessage(result)
 };
 
+
 function displayResultMessage(result) {
   const message = `Seu Imc é de ${result}`;
 
   Modal.message.innerText = message;
   Modal.open();
 }
+
+inputWeight.oninput = () => AlertError.close();
+inputHeight.oninput = () => AlertError.close();
