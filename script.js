@@ -29,7 +29,7 @@ form.onsubmit = event => {
   Modal.open()
 }
 
-modalBtnClose.onclick = () => {
+Modal.btnClose.onclick = () => {
   Modal.close()
 }
 
